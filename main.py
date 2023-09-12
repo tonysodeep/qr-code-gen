@@ -13,14 +13,14 @@ phone_number_fm = '+84 ' + phone_number[1:]
 # reate the vCard string
 vcard_template = f'''BEGIN:VCARD
 VERSION:3.0
-N:Dang;Chi;;Mr.;Chi;
+N:Dang;Chi
 FN:Chi Dang
 TITLE:CEO
 ORG:Streamline Enterprise Co. Ltd 
 URL:https://streamlinevn.com/
-EMAIL;TYPE=INTERNET:chi.dang@streamlinevn.com
-TEL;TYPE=voice,work,pref:{phone_number_fm}
-ADR;TYPE=work:Unit G1516, The Manor II building;89;Nguyen Huu Canh, Binh Thanh District, HCM City
+EMAIL;TYPE=work,INTERNET:chi.dang@streamlinevn.com
+TEL;TYPE=work,voice,pref:{phone_number_fm}
+ADR;TYPE=work,intl,postal,parcel:Unit G1516, The Manor II building;89;Nguyen Huu Canh, Binh Thanh District, HCM City
 END:VCARD'''
 
 # Generate the QR code
